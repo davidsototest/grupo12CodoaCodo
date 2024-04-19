@@ -1,0 +1,26 @@
+/*violeta oscuro*/
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #241b35;
+    color: #856885;
+}
+header {
+    background-color: #342a45;
+    color: #ffc7ff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #342a45;
+    color: #666666;
+    text-align: center;
+    padding: 12px 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+

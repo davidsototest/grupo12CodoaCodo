@@ -220,7 +220,76 @@ footer {
     width: 100%;
     bottom: 0;
 } */
+.pie-pagina{
+  width: 100%;
+  background-color: #cfc2cf;
+}
 
+.pie-pagina .grupo-1{
+  width:  100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-gap: 50px;
+  padding: 20px;
+}
+
+.pie-pagina .grupo-1 .red-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+  color: white;
+  background-color: #856885;
+  border-radius: 50%;
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+}
+
+.css-button-fully-rounded--red {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 20px;
+  border: 2px solid #856885;
+  background: #856885;
+}
+
+.css-button-fully-rounded--red:hover {
+  background: #fff;
+  color: #856885;
+}
+
+h2{
+  color: #856885;
+}
+
+/*---------- puntos de corte ---------*/
+@media screen and (max-width: 800px){
+.pie-pagina .grupo-1{
+  width: 100%;
+  grid-template-columns: repeat(1,1fr);
+  grid-gap: 50px;
+  padding: 20px;
+  }
+}
 
 
   /* -----------------------  PUNTOS DE RUPTURA ---------------- */

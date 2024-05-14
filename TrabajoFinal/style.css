@@ -14,7 +14,6 @@
 
 
 
-
   /* -----------------------  ESTILOS DE TEXTOS ---------------- */
 .font-style-title {
     font-family: "Josefin Sans", sans-serif !important;
@@ -23,6 +22,7 @@
     font-style: normal;
     color: var(--color-font-primary);
 }
+
 
 .font-style-subtitle {
     font-family: "Poppins", sans-serif !important;
@@ -66,6 +66,16 @@
     padding: 30px;
 }
 
+.container-1 { /* contenedor con fondo blanco*/
+  max-width: 1200px;
+  min-width: 200px;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 30px;
+  background-color: white;
+}
+
+
 .container-2 {
     max-width: 800px;
     margin: auto;
@@ -99,6 +109,10 @@
 .card {
     padding: 20px;
     background-color: var(--color-background-card);
+}
+.cardSinfondo{
+  padding: 20px;
+
 }
 
  /*  -------------------------- BOTONES ----------------------  */
@@ -291,21 +305,6 @@ footer {
   align-items: center;
 }
 
-.css-button-fully-rounded--red {
-  min-width: 130px;
-  height: 40px;
-  color: #fff;
-  padding: 5px 10px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-  outline: none;
-  border-radius: 20px;
-  border: 2px solid #856885;
-  background: #856885;
-}
 
 .css-button-fully-rounded--red:hover {
   background: #fff;
@@ -317,7 +316,7 @@ h2{
 }
 
 /*---------- puntos de corte ---------*/
-@media screen and (max-width: 800px){
+@media screen and (max-width: 800px){/*footer*/
 .pie-pagina .grupo-1{
   width: 100%;
   grid-template-columns: repeat(1,1fr);

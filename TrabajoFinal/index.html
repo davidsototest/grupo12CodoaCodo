@@ -13,13 +13,13 @@
 <!-- Header Nicolas -->
 <body>
     <header>
-        <div class="encabezado">
-            <div class="font-style-title cont-primario">
+        <div class="header">
+            <div class="font-style-title cont-primary">
                 <a href="./index.html" class="logo">
                     <img src="https://i.ibb.co/WPXHQQz/logo.png">Ayuda Pet
                 </a>
             </div>
-            <div class="font-style-subtitle cont-secundario">
+            <div class="font-style-subtitle cont-secundary">
                 <button class="button button-header">Nuestra plataforma</button>
                 <button class="button button-header">Contáctenos</button>
             </div>
@@ -29,8 +29,8 @@
                 <div class="cont-banner1">
                     <h2 class="font-style-subtitle">Encuentra mascotas perdidas con AyudaPet</h2>
                     <p class="font-style-normalText-italic">
-                        Publica, comenta y comparte avistamientos para ruinir mascotas con sus dueños.
-                        Juntos podmos ayudar a reunir familias peludas!
+                        Publica, comenta y comparte avistamientos para reuinir mascotas con sus dueños.
+                        Juntos podemos ayudar a reunir familias peludas!
                     </p>
                     <button class="button button-primary">VER LAS MASCOTAS</button>
                 </div>
@@ -41,7 +41,68 @@
         </div>
     </header>
 
+    <!-- Formulario Nicolas -->
+        <h1 class="font-style-subtitle form-title">Formulario de contacto</h1>
+        <div class="cont-form">
+                
+                <form action="#" method="get" class="form"> 
+                    <div class="row-title">
+                        <h2 class="font-style-normalText-italic">Ingrese sus datos</h2>
+                    </div>
 
+                    <div class="row">  
+
+                        <label for="nombreyapellido" class="font-style-normalText-italic column">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre" class="font-style-normalText-italic column" placeholder="Nombre..." required>                                                
+                        <!-- <label for="apellido" class="font-style-normalText">Apellido:</label> -->
+                        <input type="text" name="apellido" id="apellido" class="font-style-normalText-italic column" placeholder="Apellido..." required>
+                        
+                    </div>                    
+
+                    <div class="row">                        
+                        <label for="correo" class="font-style-normalText-italic column">E-Mail:</label>                        
+                        <input type="email" name="correo" id="correo" placeholder="hola@ejemplo.com..." class="font-style-normalText-italic double" required>
+                    </div>
+
+                    <div class="row">                        
+                        <label for="telefono" class="font-style-normalText-italic column">Telefono:</label>
+                        <input type="number" name="telefono" id="telefono" placeholder="Telefono..." class="font-style-normalText-italic double" required>
+                    </div>
+
+                    <div class="row">
+                        <label for="provinciayciudad" class="font-style-normalText-italic">Residencia:</label> 
+                        <input type="text" name="provincia" id="provincia" class="font-style-normalText-italic column" placeholder="Provincia..." required>
+                        <input type="text" name="ciudad" id="ciudad" class="font-style-normalText-italic column" placeholder="Ciudad..." required>
+                    </div>
+
+                    <div class="row">                        
+                        <label for="genero" class="font-style-normalText-italic">Género:</label>
+                        <div class="double">                            
+                            <input type="radio" name="genero" id="hombre" value="Hombre" required>
+                            <label for="hombre" class="font-style-normalText-italic">Hombre</label>
+                            
+                            <input type="radio" name="genero" id="mujer" value="Mujer" required>
+                            <label for="mujer" class="font-style-normalText-italic">Mujer</label>
+                            
+                            <input type="radio" name="genero" id="otro" value="Otro" required>
+                            <label for="otro" class="font-style-normalText-italic">Otro</label>
+                        </div>
+                    </div>                 
+                                                   
+                    <div class="row">
+                        <label for="mensaje" class="font-style-normalText-italic">Mensaje:</label>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="5" class="double meesage" required></textarea>
+                    </div> 
+
+                    <div class="separator"></div>
+
+                    <div class="row">
+                        <button type="submit" class="button button-secundary">ENVIAR</button>
+                    </div>
+                    
+                </form>             
+            
+        </div>
 
     <!-- Componente de tarjetas 3 DAVID -->
 

@@ -431,67 +431,44 @@ h2{
 }
 
 
+/* ------------------- patrocinadores seccion -------------------- */
+
+.sponsorship-section {
+  text-align: center;
+  padding: 40px;
+  background-color: var(--color-background-card);
+}
+
+.sponsorship-title{
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.sponsorship-section-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sponsorship-section-item {
+  margin: 0 10px;
+}
+
+.sponsorship-section-logo {
+  width: 200px;
+  height: auto;
+}
+
+
   /* -----------------------  PUNTOS DE RUPTURA ---------------- */
-  @media only screen and (min-width: 400px) and (max-width: 800px) {
-    .grid-item{
-        padding: 0px;
-    }
-    .cont-secundary{
-      grid-column-end: span 2; 
-      text-align: end;
-    } 
-    .row{      
-      grid-template-columns: repeat(4, 1fr);      
-    }
-    .separator{
-      width:75%;
-    }
-  }
 
   @media screen and (max-width: 550px) { 
-    .header{
-        grid-template-columns: 1fr;
-    }   
-    .cont-primary{
-        text-align: center;
-    }
-    .cont-secundary{
-        text-align: center;
-    }
-    .banner{
-      padding: 20px;
-      grid-template-columns: 1fr;
-      grid-gap: 30px;
-    }
-    .banner .cont-banner1{
-      text-align: center;
-    }
-    .banner .cont-banner1 h2{
-      text-align: center;
-    }
-    .banner .cont-banner2{
-      text-align: center;
-      grid-column-end: 2; 
-    }     
-    .banner .cont-banner2 .img{
-      width: 90%;  
-      border-radius: 30px
-    }
-    .cont-form .form{
-      padding: 10px;
-    }
-    .row{      
-      grid-template-columns: repeat(3, 1fr);      
-    }
-    .separator{
-      width:100%;
-    }
-  }
-
-  @media only screen and (max-width: 399px) {
     .container {
-        padding: 5px;
-        min-width: 290px;
+      padding: 5px;
+      min-width: 290px;
     }
 
     .container-2 {
@@ -499,4 +476,86 @@ h2{
         padding: 20px;
     }
 
+    .header{
+        grid-template-columns: 1fr;
+    }   
+
+    .cont-primary{
+        text-align: center;
+    }
+
+    .cont-secundary{
+        text-align: center;
+    }
+
+    .banner{
+      padding: 20px;
+      grid-template-columns: 1fr;
+      grid-gap: 30px;
+    }
+
+    .banner .cont-banner1{
+      text-align: center;
+    }
+
+    .banner .cont-banner1 h2{
+      text-align: center;
+    }
+
+    .banner .cont-banner2{
+      text-align: center;
+      grid-column-end: 2; 
+    }  
+
+    .banner .cont-banner2 .img{
+      width: 90%;  
+      border-radius: 30px
+    }
+
+    .cont-form .form{
+      padding: 10px;
+    }
+
+    .row{      
+      grid-template-columns: repeat(3, 1fr);      
+    }
+
+    .separator{
+      width:100%;
+    }
+
+    .sponsorship-section-logo {
+      width: 130px;
+      height: auto;
+    }
+
+    .sponsorship-section-item {
+      margin: 10px;
+    }
   }
+
+  @media only screen and (min-width: 400px) and (max-width: 800px) {
+    .grid-item{
+        padding: 0px;
+    }
+
+    .cont-secundary{
+      grid-column-end: span 2; 
+      text-align: end;
+    } 
+
+    .row{      
+      grid-template-columns: repeat(4, 1fr);      
+    }
+
+    .separator{
+      width:75%;
+    }
+
+    .sponsorship-section-item {
+      margin: 10px;
+    }
+  }
+
+
+   

@@ -9,7 +9,7 @@
     --color-background-card: #cfc2cf;
     --color-background-body: #241b35;
     --color-black-claro: #01010125;
-
+    --color-sombra-morada: 0 4px 10px rgba(54, 1, 54, 0.5);
 }
 
 
@@ -104,6 +104,7 @@
   /* -----------------------  ESTILOS CARD ---------------- */
 .img-card {
     width: 100%;
+    box-shadow: var(--color-sombra-morada);
 }
 
 .card {
@@ -361,26 +362,8 @@
 }
 
 
-/*-----------------------------------------------------------------*/
+/*--------------------------Footer ---------------------------------------*/
 
-/*violeta oscuro*/
-
-/* header {
-    background-color: #342a45;
-    color: #ffc7ff;
-    padding: 10px 20px;
-    text-align: center;
-}
-
-footer {
-    background-color: #342a45;
-    color: #666666;
-    text-align: center;
-    padding: 12px 20px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-} */
 .pie-pagina{
   width: 100%;
   background-color: #cfc2cf;
@@ -466,7 +449,7 @@ h2{
 .sponsorship-section-logo {
   width: 200px;
   height: auto;
-  box-shadow: 0 4px 10px rgba(54, 1, 54, 0.5);
+  box-shadow: var(--color-sombra-morada);
   border-radius: 5px;
 }
 
@@ -550,7 +533,46 @@ hr {
 }
 
 
+ /* -------------  imagen sola contacto ---------------- */
 
+ .container-img {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 300px;
+}
+
+.container-img-todo {
+  position: relative;
+  width: 100%;
+  height: 350px; 
+  overflow: hidden;
+}
+
+.container-img-img {
+  display: block;
+  width: 100%; 
+  height: 100%;
+  object-fit: cover;
+}
+
+.title-img-contact {
+  position: absolute;
+  top: 15%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 50px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.two {
+  top: 50%;
+  /* left: 50%; */
+}
 
   /* -----------------------  PUNTOS DE RUPTURA ---------------- */
 
@@ -624,6 +646,16 @@ hr {
 
     .sponsorship-section {
       padding: 30px 5px;
+    }
+
+    .title-img-contact {
+      top: 40%;
+      left: 30%;
+      font-size: 25px;
+    }
+
+    .two {
+      top: 60%;
     }
   }
 

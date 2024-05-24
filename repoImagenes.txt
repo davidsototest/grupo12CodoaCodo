@@ -1,5 +1,12 @@
 
-Imagenes usadas: USADA---
+Imagenes usadas: 
+USADA---https://firebasestorage.googleapis.com/v0/b/grupo12-f7def.appspot.com/o/imagenesGrupo12%2Fimg%20(4).jpg?alt=media&token=38e5c8be-3ae6-4da4-b2c7-e881adf34214
+
+USADA---https://firebasestorage.googleapis.com/v0/b/grupo12-f7def.appspot.com/o/imagenesGrupo12%2Fimg002.jpg?alt=media&token=8fa95868-de56-4a66-871b-f602740b5be9
+
+USADA---https://firebasestorage.googleapis.com/v0/b/grupo12-f7def.appspot.com/o/imagenesGrupo12%2Fimg%20(9).jpg?alt=media&token=4401b079-796c-4dac-8c27-0b0133daa598
+
+USADA---https://firebasestorage.googleapis.com/v0/b/grupo12-f7def.appspot.com/o/imagenesGrupo12%2Fimg001.jpg?alt=media&token=fdfa4317-3447-405f-b097-e38ceb3f6dbe
 
 
 Imagenes para usar:
@@ -9,8 +16,6 @@ https://firebasestorage.googleapis.com/v0/b/grupo12-f7def.appspot.com/o/imagenes
 
 https://firebasestorage.googleapis.com/v0/b/grupo12-f7def.appspot.com/o/imagenesGrupo12%2Fimg%20(3).jpg?alt=media&token=e6f64964-9401-4106-9237-9ec19c0bf995
 
-https://firebasestorage.googleapis.com/v0/b/grupo12-f7def.appspot.com/o/imagenesGrupo12%2Fimg%20(4).jpg?alt=media&token=38e5c8be-3ae6-4da4-b2c7-e881adf34214
-
 https://firebasestorage.googleapis.com/v0/b/grupo12-f7def.appspot.com/o/imagenesGrupo12%2Fimg%20(5).jpg?alt=media&token=1394d702-5ccc-45da-8cb5-c1a270eaa646
 
 https://firebasestorage.googleapis.com/v0/b/grupo12-f7def.appspot.com/o/imagenesGrupo12%2Fimg%20(6).jpg?alt=media&token=53c88c6a-0ca6-4373-8902-f50049a00d9b
@@ -18,12 +23,6 @@ https://firebasestorage.googleapis.com/v0/b/grupo12-f7def.appspot.com/o/imagenes
 https://firebasestorage.googleapis.com/v0/b/grupo12-f7def.appspot.com/o/imagenesGrupo12%2Fimg%20(7).jpg?alt=media&token=6b8f630d-7606-41fe-b66b-752d86c2a8d2
 
 https://firebasestorage.googleapis.com/v0/b/grupo12-f7def.appspot.com/o/imagenesGrupo12%2Fimg%20(8).jpg?alt=media&token=4fe9a488-1c90-490a-bcbc-925a69f51158
-
-https://firebasestorage.googleapis.com/v0/b/grupo12-f7def.appspot.com/o/imagenesGrupo12%2Fimg%20(9).jpg?alt=media&token=4401b079-796c-4dac-8c27-0b0133daa598
-
-https://firebasestorage.googleapis.com/v0/b/grupo12-f7def.appspot.com/o/imagenesGrupo12%2Fimg001.jpg?alt=media&token=fdfa4317-3447-405f-b097-e38ceb3f6dbe
-
-https://firebasestorage.googleapis.com/v0/b/grupo12-f7def.appspot.com/o/imagenesGrupo12%2Fimg002.jpg?alt=media&token=8fa95868-de56-4a66-871b-f602740b5be9
 
 https://firebasestorage.googleapis.com/v0/b/grupo12-f7def.appspot.com/o/imagenesGrupo12%2Fimg003.jpg?alt=media&token=72f86e2a-56d7-4d35-8139-db23c3f5ce7a
 

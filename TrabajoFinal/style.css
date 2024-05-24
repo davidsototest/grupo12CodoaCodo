@@ -74,7 +74,50 @@
   padding: 30px;
   background-color: white;
 }
+ /* iframe */
+.container-i {
+  padding-top: 5px;
+}
+.container-i .i-title{
+  text-align: center;  
+}
+.i-title .font-style-title{
+  font-size: 50px;
+  margin: 15px 0px 30px 0px;
+}
+.grid-container-i {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+}
+.card-i{
+  display: grid;
+  grid-template-rows: repeat(2,1fr);
+  padding: 20px;
 
+}
+.i-video-card {
+  width: 100%;
+  grid-row-end: span 2;
+  box-shadow: var(--color-sombra-morada);
+}
+.card-i-2{
+  display: grid;
+  grid-template-rows: repeat(3,1fr);
+  padding: 20px;
+
+}
+.row-i{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.card-i-2 .img-card{
+  width: 100%;
+  border-radius: 10px;
+}
 
 .container-2 {
     max-width: 800px;

@@ -583,8 +583,8 @@ h2{
 
 hr {
   border: none;
-  height: 1px;
-  background-color: var(--color-background-body);
+  height: 2px;
+  background-color: rgba(68, 1, 68, 0.158);
   margin: 7px 0;
 }
 

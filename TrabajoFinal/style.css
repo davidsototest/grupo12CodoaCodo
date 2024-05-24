@@ -367,6 +367,57 @@
   color: green;
 }
 
+  /* ------------------ Metricas de desempeño -------------------- */
+  .containerMetrics { /* contenedor principal */
+    width: 1400px;
+    height: 300px;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 5px;
+    padding: 10px;
+    background-color: white;
+    margin: 0 auto;
+  }
+
+  .containerMetrics-2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 auto;
+  }
+
+  .containerMetrics-3 {/* contenedor color gris */
+    width: 305px;
+    height: 180px;
+    border-radius: 5px;
+    background-color: rgb(65, 62, 65);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .containerMetrics-3-bis {/* contenedor color gris */
+    width: 305px;
+    height: 180px;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+  }
+
+  .containerMetrics-2:first-child h1 {
+    font-size: 40px; /* Tamaño de fuente más grande para el primer h1 */
+}
+
+.containerMetrics-3 h1 {
+    font-size: 30px; /* Tamaño de fuente por defecto */
+}
+
 /*--------------------------Footer ---------------------------------------*/
 
 .pie-pagina{

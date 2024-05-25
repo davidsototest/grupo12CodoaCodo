@@ -48,6 +48,7 @@
     font-style: italic;
     font-size: 16px;
     color: var(--color-font-primary);
+    text-decoration: none;
 }
 
 .font-style-card {
@@ -409,54 +410,52 @@
 }
 
   /* ------------------ Metricas de desempeño -------------------- */
-  .containerMetrics { /* contenedor principal */
-    width: 1400px;
-    height: 300px;
-    display:grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-gap: 5px;
+  .containerM{
+    width: 1450px;
+    height: auto;
+    background-color: white;
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+
+  }
+
+  .boxM{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 150px;
+    border: 2px solid black;
+    margin: 15px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: black;
+    color: white
+  }
+
+  .boxMW{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    margin: 20px;
     padding: 10px;
     background-color: white;
-    margin: 0 auto;
   }
 
-  .containerMetrics-2 {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin: 0 auto;
-  }
 
-  .containerMetrics-3 {/* contenedor color gris */
-    width: 305px;
-    height: 180px;
-    border-radius: 5px;
-    background-color: rgb(65, 62, 65);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
+/* -------------- PUNTOS DE RUPTURA METRICAS ------------*/
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .containerM .boxM, .boxMW {
+    width: 40%;
   }
-  
-  .containerMetrics-3-bis {/* contenedor color gris */
-    width: 305px;
-    height: 180px;
-    border-radius: 5px;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: black;
-  }
-
-  .containerMetrics-2:first-child h1 {
-    font-size: 40px; /* Tamaño de fuente más grande para el primer h1 */
-}
-
-.containerMetrics-3 h1 {
-    font-size: 30px; /* Tamaño de fuente por defecto */
 }
 
 /*--------------------------Footer ---------------------------------------*/

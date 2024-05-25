@@ -98,6 +98,18 @@ function validarFormulario(evento) {
         return;
     }
 
+    //mensaje
+    let mensaje = document.querySelector('#mensaje').value;
+    console.log(mensaje[0])
+    if(validarRango(mensaje.length, 10, 200)){
+        listaErrores.innerHTML += "*Ingrese un mensaje más largo."
+        return
+    }
+    if(mensaje[0] == " "){
+        listaErrores.innerHTML += "*Comenzar con un carácter."
+        return
+    }
+
     listaErrores.className = "font-style-normalText-italic success double"
     listaErrores.innerHTML = "¡Gracias por comunicarse con nosotros!"
 

@@ -100,16 +100,15 @@ function validarFormulario(evento) {
 
     //mensaje
     let mensaje = document.querySelector('#mensaje').value;
-    console.log(mensaje[0])
-    if(validarRango(mensaje.length, 10, 200)){
+    if(mensaje.length< 10){
         listaErrores.innerHTML += "*Ingrese un mensaje más largo."
         return
     }
-    if(mensaje[0] == " "){
-        listaErrores.innerHTML += "*Comenzar con un carácter."
+    if(mensaje.length> 200){
+        listaErrores.innerHTML += "*Ingrese un mensaje más corto."
         return
-    }
-
+    }    
+    
     listaErrores.className = "font-style-normalText-italic success double"
     listaErrores.innerHTML = "¡Gracias por comunicarse con nosotros!"
 
@@ -148,13 +147,10 @@ function validarString(tipoDeString, texto) {
 
 // ----------------- Asignación de iframe ------------------
 document.querySelectorAll('#buttonPerros, #buttonGatos, #buttonEnfermedades').forEach(button => {
-    button.addEventListener('click', function () {
-        //let iframe;
+    button.addEventListener('click', function () {        
         let video;
         let titulo;
-        let descripcion;
-
-        //document.querySelectorAll('#buttonPerros, #buttonGatos, #buttonEnfermedades').className = "button button-secundary"
+        let descripcion;        
 
         switch (button.id) {
             case 'buttonPerros':
@@ -178,8 +174,7 @@ document.querySelectorAll('#buttonPerros, #buttonGatos, #buttonEnfermedades').fo
                 classSecundaryButton()
                 button.className = "button button-primary"
                 break;
-            default:
-                // Si no se encuentra un ID coincidente, no se hace nada
+            default:                
                 break;
         }
         if (video) {

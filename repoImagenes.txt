@@ -8,8 +8,6 @@ USADA---https://firebasestorage.googleapis.com/v0/b/grupo12-f7def.appspot.com/o/
 
 USADA---https://firebasestorage.googleapis.com/v0/b/grupo12-f7def.appspot.com/o/imagenesGrupo12%2Fimg001.jpg?alt=media&token=fdfa4317-3447-405f-b097-e38ceb3f6dbe
 
-
-Imagenes para usar:
 https://firebasestorage.googleapis.com/v0/b/grupo12-f7def.appspot.com/o/imagenesGrupo12%2Fimg%20(1).jpg?alt=media&token=e0e4741b-ed73-4849-8c5b-10dea111b884
 
 https://firebasestorage.googleapis.com/v0/b/grupo12-f7def.appspot.com/o/imagenesGrupo12%2Fimg%20(2).jpg?alt=media&token=72ba2d14-8801-4bed-9aa8-a80f97b42580
@@ -19,6 +17,16 @@ https://firebasestorage.googleapis.com/v0/b/grupo12-f7def.appspot.com/o/imagenes
 https://firebasestorage.googleapis.com/v0/b/grupo12-f7def.appspot.com/o/imagenesGrupo12%2Fimg%20(5).jpg?alt=media&token=1394d702-5ccc-45da-8cb5-c1a270eaa646
 
 https://firebasestorage.googleapis.com/v0/b/grupo12-f7def.appspot.com/o/imagenesGrupo12%2Fimg%20(6).jpg?alt=media&token=53c88c6a-0ca6-4373-8902-f50049a00d9b
+
+
+
+
+Imagenes para usar:
+
+
+
+
+
 
 https://firebasestorage.googleapis.com/v0/b/grupo12-f7def.appspot.com/o/imagenesGrupo12%2Fimg%20(7).jpg?alt=media&token=6b8f630d-7606-41fe-b66b-752d86c2a8d2
 

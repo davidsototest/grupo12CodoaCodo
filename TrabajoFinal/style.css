@@ -417,56 +417,67 @@
   color: green;
 }
 
+.box input[type="email"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 25px; /* Hace que los bordes sean redondeados */
+  width: 80%;
+  box-sizing: border-box; /* Asegura que el padding no expanda el ancho total */
+  margin-bottom: 10px; /* Espacio entre el campo y el botón */
+}
   /* ------------------ Metricas de desempeño -------------------- */
-  .containerMetrics { /* contenedor principal */
-    width: 1400px;
-    height: 300px;
-    display:grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-gap: 5px;
-    padding: 10px;
+  .containerM {
+    width: 100%;
+    height: auto;
     background-color: white;
-    margin: 0 auto;
-  }
-
-  .containerMetrics-2 {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px; /* Espacio entre las cajas */
+    padding: 20px;
+    justify-content: center;
     align-items: center;
-    justify-content: flex-end;
-    margin: 0 auto;
-  }
+}
 
-  .containerMetrics-3 {/* contenedor color gris */
-    width: 305px;
-    height: 180px;
-    border-radius: 5px;
-    background-color: rgb(65, 62, 65);
+.boxM {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    align-items: center;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: black;
     color: white;
-  }
-  
-  .containerMetrics-3-bis {/* contenedor color gris */
-    width: 305px;
-    height: 180px;
-    border-radius: 5px;
-    background-color: white;
+    text-align: center;
+}
+
+.box-2M {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    align-items: center;
+    height: 200px;
+    padding: 5px;
+    background-color: white;
     color: black;
-  }
-
-  .containerMetrics-2:first-child h1 {
-    font-size: 40px; /* Tamaño de fuente más grande para el primer h1 */
+    text-align: center;
+    border-radius: 20px;
 }
 
-.containerMetrics-3 h1 {
-    font-size: 30px; /* Tamaño de fuente por defecto */
+h1 {
+    font-size: 1.5em;
+    line-height: 1.2em;
 }
+
+@media screen and (max-width: 800px){
+    .containerM {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+}
+
+
+
 
 /*--------------------------Footer ---------------------------------------*/
 

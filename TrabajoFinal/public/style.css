@@ -9,7 +9,7 @@
     --color-background-card: #cfc2cf;
     --color-background-body: #241b35;
     --color-black-claro: #01010125;
-
+    --color-sombra-morada: 0 4px 10px rgba(54, 1, 54, 0.5);
 }
 
 
@@ -104,6 +104,7 @@
   /* -----------------------  ESTILOS CARD ---------------- */
 .img-card {
     width: 100%;
+    box-shadow: var(--color-sombra-morada);
 }
 
 .card {
@@ -238,7 +239,7 @@
   height: 40px;
   margin-right: 3px;
 }
-.cont-secundary{
+/* .cont-secundary{
   text-align: center;    
   height: 40px;
   margin: 0px;
@@ -249,7 +250,7 @@
   padding: 10px 0px;
   margin: 1px;
   color: var(--color-font-primary);
-}
+} */
 .logo{
   color: var(--color-font-primary);
   text-decoration: none;
@@ -329,7 +330,7 @@
   min-width: 300px;
   margin: auto;
   display: grid;  
-  grid-template-rows: repeat(9, 1fr);  
+  grid-template-rows: repeat(10, 1fr);  
 }
 .row-title .font-style-normalText-italic{
   font-size: 25px;
@@ -359,28 +360,66 @@
   width:60%;
   height:50px;
 }
-
-
-/*-----------------------------------------------------------------*/
-
-/*violeta oscuro*/
-
-/* header {
-    background-color: #342a45;
-    color: #ffc7ff;
-    padding: 10px 20px;
-    text-align: center;
+.error{
+  color: red;
+}
+.success{
+  color: green;
 }
 
-footer {
-    background-color: #342a45;
-    color: #666666;
+  /* ------------------ Metricas de desempeño -------------------- */
+  .containerMetrics { /* contenedor principal */
+    width: 1400px;
+    height: 300px;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 5px;
+    padding: 10px;
+    background-color: white;
+    margin: 0 auto;
+  }
+
+  .containerMetrics-2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 auto;
+  }
+
+  .containerMetrics-3 {/* contenedor color gris */
+    width: 305px;
+    height: 180px;
+    border-radius: 5px;
+    background-color: rgb(65, 62, 65);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 12px 20px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-} */
+    color: white;
+  }
+  
+  .containerMetrics-3-bis {/* contenedor color gris */
+    width: 305px;
+    height: 180px;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+  }
+
+  .containerMetrics-2:first-child h1 {
+    font-size: 40px; /* Tamaño de fuente más grande para el primer h1 */
+}
+
+.containerMetrics-3 h1 {
+    font-size: 30px; /* Tamaño de fuente por defecto */
+}
+
+/*--------------------------Footer ---------------------------------------*/
+
 .pie-pagina{
   width: 100%;
   background-color: #cfc2cf;
@@ -466,7 +505,7 @@ h2{
 .sponsorship-section-logo {
   width: 200px;
   height: auto;
-  box-shadow: 0 4px 10px rgba(54, 1, 54, 0.5);
+  box-shadow: var(--color-sombra-morada);
   border-radius: 5px;
 }
 
@@ -544,13 +583,52 @@ h2{
 
 hr {
   border: none;
-  height: 1px;
-  background-color: var(--color-background-body);
+  height: 2px;
+  background-color: rgba(68, 1, 68, 0.158);
   margin: 7px 0;
 }
 
 
+ /* -------------  imagen sola contacto ---------------- */
 
+ .container-img {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 300px;
+}
+
+.container-img-todo {
+  position: relative;
+  width: 100%;
+  height: 350px; 
+  overflow: hidden;
+}
+
+.container-img-img {
+  display: block;
+  width: 100%; 
+  height: 100%;
+  object-fit: cover;
+}
+
+.title-img-contact {
+  position: absolute;
+  top: 15%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 50px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.two {
+  top: 50%;
+  /* left: 50%; */
+}
 
   /* -----------------------  PUNTOS DE RUPTURA ---------------- */
 
@@ -566,16 +644,18 @@ hr {
     }
 
     .header{
-        grid-template-columns: 1fr;
-    }   
-
+      grid-template-columns: 1fr;
+    } 
     .cont-primary{
-        text-align: center;
+      text-align: center;
     }
-
-    .cont-secundary{
-        text-align: center;
+    .container-header-button {
+      justify-content: center;
     }
+    .container-header-button .button{
+      min-width: 0;      
+      font-size: 11px;
+    } 
 
     .banner{
       padding: 20px;
@@ -625,6 +705,16 @@ hr {
     .sponsorship-section {
       padding: 30px 5px;
     }
+
+    .title-img-contact {
+      top: 40%;
+      left: 30%;
+      font-size: 25px;
+    }
+
+    .two {
+      top: 60%;
+    }
   }
 
   @media only screen and (min-width: 400px) and (max-width: 800px) {
@@ -635,6 +725,16 @@ hr {
 
     .grid-item{
         padding: 0px;
+    }
+
+    .header{
+      grid-template-columns: 1fr;
+    } 
+    .cont-primary{
+      text-align: center;
+    }
+    .container-header-button {
+      justify-content: center;
     }
 
     .cont-secundary{

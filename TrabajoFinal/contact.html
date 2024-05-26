@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🐶Contacto</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
     <script src="https://kit.fontawesome.com/3bee42254d.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
     <!-- Header Nicolas -->
     <header>
-        <div class="header">
+        <div class="header"> 
             <div class="font-style-title cont-primary">
                 <a href="./index.html" class="logo">
                     <img src="https://firebasestorage.googleapis.com/v0/b/grupo12-f7def.appspot.com/o/imagenesGrupo12%2Flogo.png?alt=media&token=6540d4a4-c697-4681-9eb4-d47a458b9127">Ayuda Pet
@@ -26,185 +26,172 @@
         </div>
     </header>
     
-
-    <!-- Formulario Nicolas -->
-    <h1 class="font-style-subtitle form-title">Formulario de contacto</h1>
-    <div class="cont-form">
-            
-            <form action="" method="get" class="form" id="form"> 
-                <div class="row-title">
-                    <h2 class="font-style-normalText-italic">Ingrese sus datos</h2>
-                </div>
-
-                <div class="row">  
-
-                    <label for="nombreyapellido" class="font-style-normalText-italic column">Nombre:</label>
-                    <input type="text" name="nombre" id="nombre" class="font-style-normalText-italic column" placeholder="Nombre..." required>                                                
-                    <!-- <label for="apellido" class="font-style-normalText">Apellido:</label> -->
-                    <input type="text" name="apellido" id="apellido" class="font-style-normalText-italic column" placeholder="Apellido..." required>
-                    
-                </div>                    
-
-                <div class="row">                        
-                    <label for="correo" class="font-style-normalText-italic column">E-Mail:</label>                        
-                    <input type="email" name="correo" id="correo" placeholder="hola@ejemplo.com..." class="font-style-normalText-italic double" required>
-                </div>
-
-                <div class="row">                        
-                    <label for="telefono" class="font-style-normalText-italic column">Telefono:</label>
-                    <input type="number" name="telefono" id="telefono" placeholder="Telefono..." class="font-style-normalText-italic double" required>
-                </div>
-
-                <div class="row">
-                    <label for="provinciayciudad" class="font-style-normalText-italic">Residencia:</label> 
-                    <input type="text" name="provincia" id="provincia" class="font-style-normalText-italic column" placeholder="Provincia..." required>
-                    <input type="text" name="ciudad" id="ciudad" class="font-style-normalText-italic column" placeholder="Ciudad..." required>
-                </div>
-
-                <div class="row">                        
-                    <label for="genero" class="font-style-normalText-italic">Género:</label>
-                    <div class="double">                            
-                        <input type="radio" name="genero" id="hombre" value="Hombre" required>
-                        <label for="hombre" class="font-style-normalText-italic">Hombre</label>
-                        
-                        <input type="radio" name="genero" id="mujer" value="Mujer" required>
-                        <label for="mujer" class="font-style-normalText-italic">Mujer</label>
-                        
-                        <input type="radio" name="genero" id="otro" value="Otro" required>
-                        <label for="otro" class="font-style-normalText-italic">Otro</label>
-                    </div>
-                </div>                 
-                                               
-                <div class="row">
-                    <label for="mensaje" class="font-style-normalText-italic">Mensaje:</label>
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="5" class="double meesage" required></textarea>
-                </div> 
-
-                <div class="separator"></div>
-
-                <div class="row">
-                    <button type="submit" class="button button-secundary">ENVIAR</button>
-                </div>
+    <div class="noElements">
+        <!-- Formulario Nicolas -->
+        <h1 class="font-style-subtitle form-title">Formulario de contacto</h1>
+        <div class="cont-form">
                 
-                <div class="row">                        
-                    <p class="font-style-normalText-italic error double" name="errores" id="errores"></p>                    
+                <form action="" method="get" class="form" id="form"> 
+                    <div class="row-title">
+                        <h2 class="font-style-normalText-italic">Ingrese sus datos</h2>
+                    </div>
+
+                    <div class="row">  
+
+                        <label for="nombreyapellido" class="font-style-normalText-italic column">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre" class="font-style-normalText-italic column" placeholder="Nombre..." required>                                                
+                        <!-- <label for="apellido" class="font-style-normalText">Apellido:</label> -->
+                        <input type="text" name="apellido" id="apellido" class="font-style-normalText-italic column" placeholder="Apellido..." required>
+                        
+                    </div>                    
+
+                    <div class="row">                        
+                        <label for="correo" class="font-style-normalText-italic column">E-Mail:</label>                        
+                        <input type="email" name="correo" id="correo" placeholder="hola@ejemplo.com..." class="font-style-normalText-italic double" required>
+                    </div>
+
+                    <div class="row">                        
+                        <label for="telefono" class="font-style-normalText-italic column">Telefono:</label>
+                        <input type="number" name="telefono" id="telefono" placeholder="Telefono..." class="font-style-normalText-italic double" required>
+                    </div>
+
+                    <div class="row">
+                        <label for="provinciayciudad" class="font-style-normalText-italic">Residencia:</label> 
+                        <input type="text" name="provincia" id="provincia" class="font-style-normalText-italic column" placeholder="Provincia..." required>
+                        <input type="text" name="ciudad" id="ciudad" class="font-style-normalText-italic column" placeholder="Ciudad..." required>
+                    </div>
+
+                    <div class="row">                        
+                        <label for="genero" class="font-style-normalText-italic">Género:</label>
+                        <div class="double">                            
+                            <input type="radio" name="genero" id="hombre" value="Hombre" required>
+                            <label for="hombre" class="font-style-normalText-italic">Hombre</label>
+                            
+                            <input type="radio" name="genero" id="mujer" value="Mujer" required>
+                            <label for="mujer" class="font-style-normalText-italic">Mujer</label>
+                            
+                            <input type="radio" name="genero" id="otro" value="Otro" required>
+                            <label for="otro" class="font-style-normalText-italic">Otro</label>
+                        </div>
+                    </div>                 
+                                                
+                    <div class="row">
+                        <label for="mensaje" class="font-style-normalText-italic">Mensaje:</label>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="5" class="double meesage" required></textarea>
+                    </div> 
+
+                    <div class="separator"></div>
+
+                    <div class="row">
+                        <button type="submit" class="button button-secundary">ENVIAR</button>
+                    </div>
+                    
+                    <div class="row">                        
+                        <p class="font-style-normalText-italic error double" name="errores" id="errores"></p>                    
+                    </div>
+                </form>             
+            
+        </div>
+
+        <br>
+
+
+        <!-- ------------------  imagen completa DAVID -------------------- -->
+        <section class="container-img">
+            <div class="container-img-todo">
+                <div>
+                    <p class="font-style-subtitle title-img-contact">Hola Humano!</p>
+                    <p class="font-style-subtitle title-img-contact two">Gracias por ayudarme</p>
                 </div>
-            </form>             
-        
-    </div>
-
-    <br>
-
-
-    <!-- ------------------  imagen completa DAVID -------------------- -->
-    <section class="container-img">
-        <div class="container-img-todo">
-            <div>
-                <p class="font-style-subtitle title-img-contact">Hola Humano!</p>
-                <p class="font-style-subtitle title-img-contact two">Gracias por ayudarme</p>
+                <img src="https://firebasestorage.googleapis.com/v0/b/grupo12-f7def.appspot.com/o/imagenesGrupo12%2Fimg%20(6).jpg?alt=media&token=53c88c6a-0ca6-4373-8902-f50049a00d9b" alt="Imgen-completa" class="container-img-img"/>
             </div>
-            <img src="https://firebasestorage.googleapis.com/v0/b/grupo12-f7def.appspot.com/o/imagenesGrupo12%2Fimg%20(6).jpg?alt=media&token=53c88c6a-0ca6-4373-8902-f50049a00d9b" alt="Imgen-completa" class="container-img-img"/>
-        </div>
-    </section>
+        </section>
 
-    <!-- -------------- Unirte a la comunidad DAVID ------------  -->
-    <div class="container">
-        <div class="container-2">
-            <h2 class="font-style-subtitle">Unete a la comunidad de AyudaPet 🐶</h2>
-            <div class="container-paragraph">
-                <p class="font-style-normalText-italic">
-                    Únete a la comunidad de AyudaPet y forma parte de una red dedicada a mejorar la vida de nuestras queridas mascotas. Nuestro componente te ofrece la oportunidad de conectar con otros amantes de los animales, compartir experiencias, obtener consejos útiles sobre cuidado animal, participar en eventos y campañas solidarias, y contribuir a la promoción del bienestar animal. Juntos, podemos marcar la diferencia y crear un mundo más compasivo y protector para todos los seres peludos que alegran nuestras vidas.
-                </p>
-            </div>
-            <div style="display: flex; width: 100%; justify-content: center;">
-                <button class="button button-primary" id="contactButton1">Unirme</button>
-            </div>
-        </div>
-    </div>
-
-    <br><br>
-
-
-    <!--  ---------   Seccion de patrocinadores david -------- -->
-    <section class="sponsorship-section">
+        <!-- -------------- Unirte a la comunidad DAVID ------------  -->
         <div class="container">
-            <h2 class="font-style-subtitle sponsorship-title">Nuestros Patrocinadores</h2>
-            <ul class="sponsorship-section-list">
-                <li class="sponsorship-section-item">
-                    <img src="https://firebasestorage.googleapis.com/v0/b/grupo12-f7def.appspot.com/o/logosEmpresas%2Flogo001.jpg?alt=media&token=b830a4c3-6aea-4b88-9aac-c480af579efd" alt="empresa-patrocinio1" class="sponsorship-section-logo">
-                </li>
-                <li class="sponsorship-section-item">
-                    <img src="https://firebasestorage.googleapis.com/v0/b/grupo12-f7def.appspot.com/o/logosEmpresas%2Flogo002.jpg?alt=media&token=fafaa101-8182-4b26-88e4-fba0916f16d5" alt="empresa-patrocinio2" class="sponsorship-section-logo">
-                </li>
-                <li class="sponsorship-section-item">
-                    <img src="https://firebasestorage.googleapis.com/v0/b/grupo12-f7def.appspot.com/o/logosEmpresas%2Flogo003.jpg?alt=media&token=bad7ea0b-8303-459c-9fb2-e419ad7a8317" alt="empresa-patrocinio3" class="sponsorship-section-logo">
-                </li>
-                <li class="sponsorship-section-item">
-                    <img src="https://firebasestorage.googleapis.com/v0/b/grupo12-f7def.appspot.com/o/logosEmpresas%2Flogo004.jpg?alt=media&token=96257064-a4f2-46b0-af06-349fc59eae0b" alt="empresa-patrocinio4" class="sponsorship-section-logo">
-                </li>
-                <li class="sponsorship-section-item">
-                    <img src="https://firebasestorage.googleapis.com/v0/b/grupo12-f7def.appspot.com/o/logosEmpresas%2Flogo005.jpg?alt=media&token=e1fca910-672d-460a-b61f-f94c97a1fd30" alt="empresa-patrocinio5" class="sponsorship-section-logo">
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <br><br>
-
-
-
-
-
-    <br><br>
-
-
-    <!-- TODO:
-    1. cambiar los <p> por <a> de link. 
-    2. utilizar las fuentes declaradas para el proyecto. Los <p> tienen otra fuente. 
-    3. utilizarlas nombre de las clases en ingles
-    4. Hacer responsive el footer, para mobile, y tablet
-    -->
-    <!-- Pie de pagina-->
-    <footer class="pie-pagina">
-        <div class="grupo-1">
-            <div class="box">
-                <h2>Titulo</h2>
-                <p>Sri lanka's first & largets platform designed to create an online marketplace exclusively fo RENT</p>
-                <div class="red-social">
-                    <a href="https://es-la.facebook.com/" class="fa fa-facebook"></a>
-                    <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
-                    <a href="https://twitter.com/?lang=ES" class="fa fa-twitter"></a>
-                    <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+            <div class="container-2">
+                <h2 class="font-style-subtitle">Unete a la comunidad de AyudaPet 🐶</h2>
+                <div class="container-paragraph">
+                    <p class="font-style-normalText-italic">
+                        Únete a la comunidad de AyudaPet y forma parte de una red dedicada a mejorar la vida de nuestras queridas mascotas. Nuestro componente te ofrece la oportunidad de conectar con otros amantes de los animales, compartir experiencias, obtener consejos útiles sobre cuidado animal, participar en eventos y campañas solidarias, y contribuir a la promoción del bienestar animal. Juntos, podemos marcar la diferencia y crear un mundo más compasivo y protector para todos los seres peludos que alegran nuestras vidas.
+                    </p>
+                </div>
+                <div style="display: flex; width: 100%; justify-content: center;">
+                    <button class="button button-primary" id="contactButton1">Unirme</button>
                 </div>
             </div>
-            <div class="box">
-                <h2>Navigation</h2>
-                <p>About Us</p>
-                <p>Blog</p>
-                <p>Terms of use</p>
-                <p>Privacy Policy</p>
-            </div>
-            <div class="box">
-                <h2>Featured Lcations</h2>
-                <p>Kandy</p>
-                <p>Anuradhapura</p>
-                <p>Badulla</p>
-                <p>Colombo</p>
-                <p>Kaluthara</p>
-            </div>
-            <div class="box">
-                <h2>Help</h2>
-                <p>FAQ</p>
-                <p>Contac Us</p>
-            </div>
-            <div class="box">
-                <h2>Subscribe to our newsletter</h2>
-                <p>Stay update whit the latest listing and rental tips</p>
-                <button class="button button-secundary">See more</button>
-            </div>
         </div>
-    </footer>
 
-    <script src="script.js"></script>
+        <br><br>
+
+
+        <!--  ---------   Seccion de patrocinadores david -------- -->
+        <section class="sponsorship-section">
+            <div class="container">
+                <h2 class="font-style-subtitle sponsorship-title">Nuestros Patrocinadores</h2>
+                <ul class="sponsorship-section-list">
+                    <li class="sponsorship-section-item">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/grupo12-f7def.appspot.com/o/logosEmpresas%2Flogo001.jpg?alt=media&token=b830a4c3-6aea-4b88-9aac-c480af579efd" alt="empresa-patrocinio1" class="sponsorship-section-logo">
+                    </li>
+                    <li class="sponsorship-section-item">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/grupo12-f7def.appspot.com/o/logosEmpresas%2Flogo002.jpg?alt=media&token=fafaa101-8182-4b26-88e4-fba0916f16d5" alt="empresa-patrocinio2" class="sponsorship-section-logo">
+                    </li>
+                    <li class="sponsorship-section-item">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/grupo12-f7def.appspot.com/o/logosEmpresas%2Flogo003.jpg?alt=media&token=bad7ea0b-8303-459c-9fb2-e419ad7a8317" alt="empresa-patrocinio3" class="sponsorship-section-logo">
+                    </li>
+                    <li class="sponsorship-section-item">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/grupo12-f7def.appspot.com/o/logosEmpresas%2Flogo004.jpg?alt=media&token=96257064-a4f2-46b0-af06-349fc59eae0b" alt="empresa-patrocinio4" class="sponsorship-section-logo">
+                    </li>
+                    <li class="sponsorship-section-item">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/grupo12-f7def.appspot.com/o/logosEmpresas%2Flogo005.jpg?alt=media&token=e1fca910-672d-460a-b61f-f94c97a1fd30" alt="empresa-patrocinio5" class="sponsorship-section-logo">
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <br><br>
+
+        <!-- ------------------ Pie de pagina- PABLO -----------------  -->
+        <footer class="pie-pagina">
+            <div class="grupo-1">
+                <div class="box">
+                    <h2 class="font-style-normalText-italic"><b>Titulo</b></h2>
+                    <p class="font-style-normalText">Sri lanka's first & largets platform designed to create an online marketplace exclusively fo RENT</p>
+                    <div class="red-social">
+                        <a href="https://es-la.facebook.com/" class="fa fa-facebook"></a>
+                        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                        <a href="https://twitter.com/?lang=ES" class="fa fa-twitter"></a>
+                        <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+                    </div>
+                </div>
+                <div class="box">
+                    <h2 class="font-style-normalText-italic"><b>Navigation</b></h2>
+                    <a href="#" class="font-style-card">About Us</a><br><br>
+                    <a href="#" class="font-style-normalText-italic">Blog</a><br><br>
+                    <a href="#" class="font-style-normalText-italic">Terms of use</a><br><br>
+                    <a href="#" class="font-style-normalText-italic">Privacy Policy</a><br>
+                </div>
+                <div class="box">
+                    <h2 class="font-style-normalText-italic"><b>Featured Lcations</b></h2>
+                    <a href="#" class="font-style-card">Kandy</a><br><br>
+                    <a href="#" class="font-style-normalText-italic">Anuradhapura</a><br><br>
+                    <a href="#" class="font-style-normalText-italic">Badulla</a><br><br>
+                    <a href="#" class="font-style-normalText-italic">Colombo</a><br><br>
+                    <a href="#" class="font-style-normalText-italic">Kaluthara</a><br><br>
+                </div>
+                <div class="box">
+                    <h2 class="font-style-normalText-italic"><b>Help</b></h2>
+                    <a href="#" class="font-style-normalText-italic">FAQ</a><br><br>
+                    <a href="#" class="font-style-normalText-italic">Contac Us</a><br><br>
+                </div>
+                <div class="box">
+                    <h2 class="font-style-normalText-italic"><b>Subscribe to our newsletter</b></h2>
+                    <p class="font-style-normalText-italic">Stay update whit the latest listing and rental tips</p>
+                    <button class="button button-secundary">See more</button>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./script.js"></script>
 </body>
 </html>

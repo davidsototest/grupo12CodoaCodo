@@ -23,7 +23,7 @@ document.querySelectorAll('#homeButton, #publicationsButton, #contactButton, #co
                 url = './educat.html';
                 break;
             default:
-                // Si no se encuentra un ID coincidente, no se hace nada
+                url = './index.html';
                 break;
         }
 
@@ -204,6 +204,40 @@ function classSecundaryButton(){
 // ----------------- data de publicaciones david ------------------
 // dios mio las bases son importante, pero me quedo con react jaja
 //todo esto primero lo hice con HTML y luego lo traje aqui para reutilizar los elementos
+
+document.addEventListener('DOMContentLoaded', () => {
+    //pagina donde necesito el json data
+    const validPathsForJson = ['publications.html'];
+    const currentPath = window.location.pathname.split('/').pop();
+
+    if (validPathsForJson.includes(currentPath)) {
+        dataPublications();
+    }
+
+    //  --------------------------- Asigancion de page 404 ------------------
+    const validPaths = ['index.html', 'publications.html', 'contact.html', 'educat.html'];
+
+    if (!validPaths.includes(currentPath) && currentPath !== '') {
+        if (currentPath !== '404.html') {
+            window.location.href = '404.html';
+        }
+    }
+
+    // -------------- transicion al cargar el DOM de las paginas ---------------
+    const elements = document.querySelectorAll('.noElements');
+
+        elements.forEach(element => {
+            element.classList.remove('withElements');
+        });
+
+        setTimeout(() => {
+            elements.forEach(element => {
+                element.classList.add('withElements');
+            });
+        }, 100); 
+});
+
+
 async function dataPublications() {
     try {
         const response = await fetch("./data/data.json");
@@ -277,10 +311,6 @@ async function dataPublications() {
         console.error('Error al consultar el json:', error);
     }
 }
-
-document.addEventListener('DOMContentLoaded', dataPublications);
-
-
 
 
 

@@ -426,6 +426,8 @@
   box-sizing: border-box; /* Asegura que el padding no expanda el ancho total */
   margin-bottom: 10px; /* Espacio entre el campo y el botón */
 }
+
+
   /* ------------------ Metricas de desempeño -------------------- */
   .containerM {
     width: 100%;
@@ -466,26 +468,12 @@
     border-radius: 20px;
 }
 
-h1 {
-    font-size: 1.5em;
-    line-height: 1.2em;
-}
-
-@media screen and (max-width: 800px){
+/* @media screen and (max-width: 550px){
     .containerM {
-        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+      display: flex;
+      padding: 10px;
     }
-}
-
-
-@media screen and (max-width: 800px){
-    .containerM {
-        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-    }
-}
-
-
-
+} */
 
 /*--------------------------Footer ---------------------------------------*/
 
